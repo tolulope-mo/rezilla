@@ -10,36 +10,35 @@
     &family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;
     1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="../css/global.css" >
-    <link rel="stylesheet" href="../css/index.css" >
+    <link rel="stylesheet" href="/css/global.css" >
+    <link rel="stylesheet" href="/css/index.css" >
+    <script src="/js/index.js" defer></script>
 </head>
 <body>
     <div id="wrapper">
+
+    <nav id="nav2">
+        <img class="nav2Logo" src="/images/RezillaLogo.svg" id="logo" />
+        <button>
+            <img id="openNavBtn" src='/images/menuIcon.svg'/>
+            <img id="closeNav" src='/images/closeNav.svg'/>
+        </button>
+    </nav>
+
     <nav id="nav">
         <div class="links">
-            <a class="link h5">Home</a>
-            <a class="link h5">About</a>
-            <a class="link h5">Listings</a>
-            <a class="link h5">Services</a>
-            <a class="link h5">Blog</a>
+            <a href=#header class="link h5">Home</a>
+            <a href=#whoAreWe class="link h5">About</a>
+            <a href=#new class="link h5">Listings</a>
+            <a href=#services class="link h5">Services</a>
+            <a href=#article class="link h5">Blog</a>
         </div>
 
         <img src="/images/RezillaLogo.svg" id="logo" />
-
-        <div class="nav-right">
-            <span class="nav-group">
-                <i  class="lucide-icon" data-lucide="user"></i>
-                <p class="h5">Login/Register</p>
-            </span>
-
-            <span class="nav-group add-Listing">
-                <i class="lucide-icon" data-lucide="home"></i>
-                <p class="h5">Add Listing</p>
-            </span>
-        </div>
     </nav>
         
     <header id="header">
+        <div class="bg"></div>
         <section class="section1">
             <h4 class="section1Header">REAL ESTATE</h4>
             <h2 class="section1Text h1">Find a perfect home you love..!</h2>
@@ -48,20 +47,13 @@
             <div class="slider">
                 <div class="carouselImgsContainer" id="track">
                     <img src="/images/headerCarouselImg.png" />
-                    <img src="/images/headerCarouselImg.png" />
-                    <img src="/images/headerCarouselImg.png" />
-                    <img src="/images/headerCarouselImg.png" />
+                    <img src="/images/ls2.jfif" />
+                    <img src="/images/ls3.jfif" />
+                    <img src="/images/ls4.jfif" />
                 </div>
                 
-                <button class="sliderBtn left"><img /></button>
-                <button class="sliderBtn right"><img /></button>
-                
-                <div class="lineSpan">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
+                <button class="sliderBtn left"><img id="swipeLeft" src="/images/swipeLeft.svg" /></button>
+                <button class="sliderBtn right"><img id="swipeRight" src="/images/swipeRight.svg" /></button>
             </div>
         </section>
 
@@ -135,7 +127,7 @@
     </aside>
 
     <main id="main">
-        <section class="whoAreWe">
+        <section class="whoAreWe" id="whoAreWe">
             <div class="left" >
                 <p class="section1Header">WHO WE ARE</p>
                 <h2 class="h2">Assisting individuals in locating the appropriate real estate.</h2>
@@ -171,7 +163,7 @@
             </div>
         </section>
 
-        <section class="new">
+        <section class="new" id="new">
             <div class="newInner">
 
             <span class="top">
@@ -378,7 +370,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section class="services" id="services">
             <h5 class="section1Header">OUR SERVICES</h5>
             <h2 class="h2">Services Designed Around Your Property Needs</h2>
 
@@ -440,7 +432,7 @@
             
         </section>
 
-        <article class="article">
+        <article class="article" id="article">
             <div class="first">
             <h4 class="section1Header">WHAT'S TRENDING? </h4>
             <h2 class="h2">Latest Blogs & Posts</h2>
@@ -451,38 +443,34 @@
                 <div class="articleCard">
                     <img class="aimg" src="/images/blog1.png">
                     <h3 class="h3">Top 10 Home Buying Mistakes to Avoid</h3>
-                    <p class="paragraphRegular">Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
+                    <p class="paragraphRegular">Smart tips every first time buyer should know before closing.</p>
                     <img src="/images/right.png">
                 </div>
 
                 <div class="articleCard">
                     <img class="aimg" src="/images/blog2.png">
                     <h3 class="h3">How to Stage Your Home for a Quick Sale</h3>
-                    <p class="paragraphRegular">Nullam odio lacus, dictum quis pretium congue, vehicula venenatis nunc.</p>
+                    <p class="paragraphRegular">Simple styling tricks that help buyers fall in love instantly.</p>
                     <img src="/images/right.png">
                 </div>
 
                 <div class="articleCard">
                     <img class="aimg" src="/images/blog3.png">
-                    <h3 class="h3">5 Tips for First-Time Home Sellersd</h3>
-                    <p class="paragraphRegular">In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus.</p>
+                    <h3 class="h3">5 Tips for First-Time Home Sellers</h3>
+                    <p class="paragraphRegular">Learn practical advice to price right, attract offers, and sell faster.</p>
                     <img src="/images/right.png">
                 </div>
 
             </div>
         </article>
 
-        <aside class="agent" >
-            
-            <span>
+        <aside class="agent" >   
             <img class="agentImg" src="/images/agent.png">
 
-            <div>
+            <span>
                 <h2 class="h2">Become a Agent.</h2>
                 <p class="paragraphRegular">Fusce venenatis tellus a felis scelerisque. venenatis tellus a felis scelerisque. </p>
-            </div>
-
-            <button class="h5">Register Now</button>
+                <button class="h5">Register Now</button>
             </span>
         </aside>
 

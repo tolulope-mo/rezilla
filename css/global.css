@@ -47,6 +47,14 @@ table {
 	border-spacing: 0;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, span {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
 :root {
 	--primary: #3A0CA3;
 	--color1: #4361EE;
